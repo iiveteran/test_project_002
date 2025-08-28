@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="./img/small_logo2.JPG">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/subscribe.css">
+   <link rel="stylesheet" href="./css/search.css">
+
+   <title>검색</title>
+</head>
+<body>
+   <header>
+      <iframe src="./header.html" scrolling="no"></iframe>
+   </header>
+   <div class="title">
+      <h3>상세검색</h3>
+   </div>
+   <section class="searc_window">
+      <div class="s1">
+         <table>
+            <tr><td class="col1">카테고리</td><td>
+               <select class="search_genre" style="height:40px;">
+                  <option selected disabled hidden>장르선택</option>
+                  <option>전체</option>
+                  <option>한국영화</option>
+                  <option>한국드라마</option>
+                  <option>해외영화</option>
+                  <option>해외드라마</option>
+                  <option>예능</option>
+                  <option>스포츠</option>
+                  <option>다큐멘터리</option>
+                  <option>키즈</option>
+               </select>
+            </td><td></td></tr>
+            <tr><td class="col1">키워드1</td><td><input type="text" placeholder="키워드를 입력하세요"></td><td></td></tr>
+            <tr><td class="col1">키워드2</td><td><input type="password" placeholder="키워드를 입력하세요"></td><td></td></tr>
+            <tr><td class="col1">키워드3</td><td><input type="password" placeholder="키워드를 입력하세요"></td><td></td></tr>
+         </table>
+      </div>
+      <br>
+      <div class="s2">
+         <table>
+            <tr><td class="col1"></td><td><input class="final_confirm" type="submit" value="검색"></td><td></td></tr>
+         </table> 
+      </div>      
+   </section>
+   <section class="search_result">
+      <h3>검색결과</h3>
+      <table class="result_table">
+         <tr><td class="column1">
+            <a href="./family.html"><img class="thumb" src="img/가족X멜로.JPG" alt="가족"></a>
+               <div class="icons">
+                  <button class="icon"><img src="./img/play_icon.png" alt="play"></button>
+                  <button class="icon"><img src="./img/view_icon.png" alt="view"></button>
+               </div>            
+            </td>
+            <td class="column2">11년 전에 내다 버린 아빠가 우리 집 건물주로 컴백하며 벌어지는 피 튀기는 패밀리 멜로</td>
+         </tr>
+         <tr><td class="column1">
+            <img class="thumb" src="img/갯마을차차차.JPG" alt="갯마을">
+               <div class="icons">
+                  <button class="icon"><img src="./img/play_icon.png" alt="play"></button>
+                  <button class="icon"><img src="./img/view_icon.png" alt="view"></button>
+               </div>    
+         </td>
+         <td class="column2">현실주의 치과의사 윤혜진과 만능 백수 홍반장이 짠내 사람내음 가득한 바닷마을 ‘공진’에서 벌이는 티키타카 힐링 로맨스</td>
+      </tr>
+      </table>
+   </section>
+   <footer>
+      <iframe src="./footer.html" style="width:100%; height: 200px; border:none;" scrolling="no"></iframe>
+   </footer>     
+</body>
+</html>

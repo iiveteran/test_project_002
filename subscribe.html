@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="./img/small_logo2.JPG">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/subscribe.css">
+   <title>회원가입</title>
+</head>
+<body>
+   <header>
+      <iframe src="header.html" scrolling="no"></iframe>
+   </header>
+   <div class="title">
+      <h3>회원가입</h3>
+   </div>
+   <section>
+      <div class="s1">
+         <table class="join">
+            <colgroup>
+               <col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5">
+            </colgroup>
+            <tr><td class="col1">이름</td><td colspan="3"><input type="text" placeholder="이름을 입력하세요"></td><td></td></tr>
+            <tr><td class="col1">아이디</td><td colspan="3"><input type="text" placeholder="아이디를 입력하세요"></td><td class="btn"><input class="confirm" type="submit" value="중복확인"></td></tr>
+            <tr><td class="col1">비밀번호</td><td colspan="3"><input type="password" placeholder="비밀번호를 입력하세요"></td><td></td></tr>
+            <tr><td class="col1">비밀번호확인</td><td colspan="3"><input type="password" placeholder="비밀번호를 입력하세요"></td><td></td></tr>
+            <tr><td class="col1" style="height:10px;"></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td class="col1">전화번호</td><td colspan="3"><input type="tel" placeholder="010-1234-5678"></td><td class="btn"><input class="confirm" type="submit" value="본인확인"></td></tr>
+            <tr><td class="col1">생년월일</td><td colspan="3"><input type="date" ></td><td></td></tr>
+            <tr><td class="col1">주소</td><td colspan="3"><input type="text" placeholder="주소를 입력하세요"></td><td class="btn"><input class="confirm" type="submit" value="주소찾기"></td></tr>
+            <tr><td class="col1">상세주소</td><td colspan="3"><input type="text" placeholder="상세주소를 입력하세요"></td><td></td></tr>
+            <tr><td class="col1">이메일</td><td><input type="email"></td><td>@</td><td><input></td>
+               <td>
+                  <select>
+                     <option selected disabled hidden>email</option>
+                     <option>직접입력</option>
+                     <option>naver.com</option>
+                     <option>gmail.com</option>
+                     <option>daum.net</option>
+                     <option>hanmail.net</option>
+                     <option>hotmail.com</option>
+                  </select>
+               </td></tr>
+         </table>
+      </div>
+      <br>
+      <div class="s2">
+         <input class="final_confirm" type="submit" value="가입">
+         <!-- <table>
+            <tr><td class="col1"><input class="final_confirm" type="submit" value="가입"></td></tr>
+         </table>  -->
+      </div>       
+   </section>
+
+   <footer>
+      <iframe src="./footer.html" style="width:100%; height: 200px; border:none;" scrolling="no"></iframe>
+   </footer>       
+</body>
+</html>

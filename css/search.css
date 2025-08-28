@@ -1,0 +1,77 @@
+.search_genre{
+   border-radius: 10px;
+}
+.search_result{
+   margin-top: 50px;
+}
+.result_table tr{
+   height:80px;
+}
+.column1{
+   position:relative;
+   width:100px;
+   padding: 5px 20px;
+}
+.column1 img{
+   width:100%;
+}
+.column2{
+   width:800px;
+}
+.icons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  opacity: 0;                /* 기본 숨김 */
+  pointer-events: none;      /* 숨김일 때 하단 요소 클릭 방해 X */
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+/* 아이콘 크기 조절 */
+.icons img {
+   background-color: white;
+   border-radius: 50%;
+   pointer-events: auto; /* 아이콘은 이벤트 가능 */
+   width: 12px;
+   height: 12px;
+   cursor: pointer;
+   transition: transform 0.3s ease; /* 부드럽게 변환 */  
+}
+.column1:hover .icons{
+  opacity: 1;
+  pointer-events: auto;   
+}
+/* 아이콘 버튼(배경 둥글게) */
+.column1 .icon {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 50%; 
+  background: rgba(0,0,0,0.55);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+}
+/* 아이콘 hover 시: 아이콘만 추가 확대 */
+.column1 .icon:hover {
+  transform: scale(1.15);
+  background: rgba(0,0,0,0.65);
+}
+/* 아이콘 내부 이미지 크기 */
+.column1 .icon img {
+  width: 12px;
+  height: 12px;
+  pointer-events: none;  /* 버튼 hover/클릭을 가로막지 않도록 */
+}
+.column1 img{
+   transition: transform 0.3s ease;
+}
+.column1:hover img{
+   transform: scale(1.08);
+}

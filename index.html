@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="./img/small_logo2.JPG">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/index.css">
+   <link rel="stylesheet" href="./css/header.css">
+   <title>uFlix - 연습</title>
+</head>
+<body>
+   <!-- import header -->
+   <!-- <div id="header"></div>
+
+   <script>
+   fetch('header.html')
+   .then(response => response.text())
+   .then(data => {
+      document.getElementById('header').innerHTML = data;
+   });
+   </script>  -->
+
+   <header>
+      <iframe src="./header.html" scrolling="no"></iframe>
+   </header>
+
+   <div class="title">
+      <h3>Main Page</h3>
+   </div>
+    
+   <section id="films-section">
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+      const categories = [
+            {
+               name: "시청중",
+               films: [
+                  { src: "./img/가족X멜로.JPG", link: "./family.html"},
+                  { src: "./img/갯마을차차차.JPG", link: "village.html"},
+                  { src: "./img/검사내전.JPG", link: "prosecutor.html"},
+                  { src: "./img/고스트닥터.JPG"},
+                  { src: "./img/끝내주는해결사.JPG"},
+                  { src: "./img/사랑의이해.JPG"},
+                  { src: "./img/엄마친구아들.JPG"},
+                  { src: "./img/연모.JPG"},
+                  { src: "./img/왜오수재인가.JPG"}
+               ]
+            },
+            {
+               name: "인기작",
+               films: [
+                  { src: "./img/남남.JPG"},
+                  { src: "./img/멜로가체질.JPG"},
+                  { src: "./img/미녀와순정남.JPG"},
+                  { src: "./img/비밀은없어.JPG"},
+                  { src: "./img/신성한이혼.JPG"},
+                  { src: "./img/의사요한.JPG"},
+                  { src: "./img/이상한변호사우영우.JPG"},
+                  { src: "./img/조립식가족.JPG"},
+                  { src: "./img/가족X멜로.JPG"}
+               ]
+            },
+            {
+               name: "신작",
+               films: [
+                  { src: "./img/하이에나.JPG"},
+                  { src: "./img/고스트닥터.JPG"},
+                  { src: "./img/연모.JPG"},
+                  { src: "./img/로스쿨.JPG"},
+                  { src: "./img/갯마을차차차.JPG"},
+                  { src: "./img/검사내전.JPG"},
+               ]
+            },
+            {
+               name: "추천 영상",
+               films: [
+                  { src: "./img/멜로가체질.JPG"},
+                  { src: "./img/의사요한.JPG"},
+                  { src: "./img/대행사.JPG"},
+                  { src: "./img/킹더랜드.JPG"},
+                  { src: "./img/월수금화목토.JPG"},
+                  { src: "./img/사랑의불시착.JPG"},
+                  { src: "./img/모범택시2.JPG"},
+                  { src: "./img/노무사노무진.JPG"},
+               ]
+            }            
+            ];
+      
+            const section = document.querySelector("#films-section");
+      
+            categories.forEach((category, idx) => {
+            // 카테고리 블록 생성
+            const block = document.createElement("article");
+            block.classList.add("films");
+      
+            block.innerHTML = `
+               <br><p>${category.name}</p><br>
+               <swiper-container class="mySwiper-${idx}" slides-per-view="6" space-between="10" free-mode="true" navigation="true"></swiper-container>
+            `;
+      
+            section.appendChild(block);
+      
+            // 해당 swiper-container 안에 영화 슬라이드 넣기
+            const container = block.querySelector(`.mySwiper-${idx}`);
+            category.films.forEach(film => {
+               const slide = document.createElement("swiper-slide");
+               slide.innerHTML = `
+                  <a href="${film.link}">
+                  <img class="thumb" src="${film.src}" alt="">
+                  <div class="icons">
+                     <button class="icon"><img src="./img/play_icon.png" alt="play"></button>
+                     <button class="icon"><img src="./img/view_icon.png" alt="view"></button>
+                  </div>
+                  </a>
+               `;
+               container.appendChild(slide);
+            });
+            });
+      </script>
+
+   </section>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+   <!-- <div id="footer"></div>
+   <script>
+      fetch('./footer.html')
+      .then(response => response.text())
+      .then(data => {
+         document.getElementById('footer').innerHTML = data;
+      });
+   </script>  -->
+
+   <footer>
+      <iframe src="./footer.html" style="width:100%; height: 200px; border:none;" scrolling="no"></iframe>
+   </footer>
+</body>
+</html>

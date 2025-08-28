@@ -1,0 +1,82 @@
+section{
+   /* margin-top: 170px;  */
+   /* margin-left:100px; */
+   justify-items: center;
+   min-width: 540px;
+   color:white;
+}
+/* table{
+   border-collapse: collapse;
+}
+tr, td{
+   border:1px solid rgb(128, 128, 128, 0.5);
+} */
+table input {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.col1, #col1{
+   font-size: 16px;
+   width:150px;
+   text-align: right;
+   padding-right:10px;
+}
+#col2{ font-size: 16px;}
+.btn{padding-left: 10px;}
+
+.final_confirm{
+   width: 100px;
+   height: 40px;
+   border-radius: 20px;
+   box-sizing: border-box;
+   font-size: 16px;
+   font-weight:600;
+   cursor: pointer;
+   color: white;
+   background-color: #BD3030 ;   
+}
+input.confirm:hover {
+  background-color: #eecc51 ;
+}
+input.final_confirm:hover {
+  background-color: #c05454 ;
+}
+
+
+table.join {
+  /* width: 100%; */
+  border-collapse: collapse;
+  table-layout: fixed; /* 열 너비 고정 */
+}
+
+/* 라벨 열 */
+col.c1 { width: 50px; }
+
+/* 가운데 3열 합계 = 200px */
+col.c2 { width: 90px; }   /* 첫 번째 입력칸 */
+col.c3 { width: 20px; }   /* @ */
+col.c4 { width: 90px; }   /* 두 번째 입력칸 */
+
+/* 마지막 버튼/빈칸 */
+col.c5 { width: 50px; }
+
+td {
+  padding: 4px;
+  /* border: 1px solid #ccc; */
+}
+/* 입력 요소는 셀 가로 꽉 차게 */
+table.join td input[type="text"],
+table.join td input[type="password"],
+table.join td input[type="tel"],
+table.join td input[type="date"],
+table.join td input[type="email"],
+table.join td input:not([type]) {
+  width: 100%;
+  box-sizing: border-box;
+}
+table select{
+   height:35px;
+   border-radius: 20px;
+}

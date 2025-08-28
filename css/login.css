@@ -1,0 +1,102 @@
+.at1 {
+  display: flex;
+  flex-direction: column;   /* 위에서 아래로 배치 */
+  align-items: center;      /* 가로 중앙 */
+  justify-content: center;  /* 세로 중앙 */
+  min-height: 50vh;        /* 화면 전체 높이 기준 중앙정렬 */
+  /* background-color: #f9f9f9; */
+}
+
+table{
+   margin-bottom: 20px;
+}
+table.login {
+   border-spacing: 0;
+   border: 1px solid darkgray;
+   border-radius: 20px;
+   overflow: hidden;
+   width: 300px;
+   background-color: #3b3e38 ;
+}
+
+td.login {
+   padding: 4px 10px;
+   border-bottom: 1px solid darkgray; /* 중간 줄 */
+}
+
+/* 마지막 td에는 중간선 제거 */
+tr.login:last-child td {
+   border-bottom: none;
+}
+
+table.login input[type="text"],
+table.login input[type="password"] {
+   background-color: #3b3e38 ;
+   color: white;
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   font-size: 20px;
+   box-sizing: border-box;   /* padding 포함해서 width 100% */
+}
+
+/* 버튼들을 가로로 나란히 배치 */
+.button_group {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* 버튼 사이 간격 */
+  margin-bottom: 40px;
+}
+
+.button_group input[type="submit"] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 21px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#login_id { background: #4CAF50; color: white; }
+#login_id:hover { background: #45a049; }
+
+#search_id { background: #4CAF50; color: white; }
+#search_id:hover { background: #45a049; }
+
+#search_pswd { background: #4CAF50; color: white; }
+#search_pswd:hover { background: #45a049; }
+
+/* 간편 로그인 박스 */
+.simple_box {
+  width: 400px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.simple_login p {
+   color: black;
+   font-size: 25px;;
+   font-weight: bold;
+   margin-bottom: 30px;
+}
+
+.simple_login div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.simple_login img {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.simple_login img:hover {
+  transform: scale(1.1);
+}
