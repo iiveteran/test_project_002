@@ -5,6 +5,7 @@
  - 고정 페이지 : 너비 1440px
  
  ### 파일구조
+ ```
  │-- img			이미지 파일
  ├ css				css 파일
  ├ index.html		메인페이지
@@ -15,6 +16,6 @@
  ├ login.html       로그인 페이지
  ├ subcribe.html    가입페이지
  └ family.html      선택영상 상세 페이지
- 
+ ```
  ### 사용 기술
  html, css
